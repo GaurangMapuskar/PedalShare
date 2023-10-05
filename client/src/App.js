@@ -10,6 +10,7 @@ import UserBookings from './pages/UserBookings';
 import AddBike from './pages/AddBike';
 import AdminHome from './pages/AdminHome';
 import EditBike from './pages/EditBike';
+import Subscription  from './pages/Subscripton';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
              <ProtectedRoute path='/addcar' exact component={AddBike} />
              <ProtectedRoute path='/editcar/:carid' exact component={EditBike} />
              <ProtectedRoute path='/admin' exact component={AdminHome} />
+             <ProtectedRoute path="/subscription" exact component={Subscription} />
          
          </BrowserRouter>
 
